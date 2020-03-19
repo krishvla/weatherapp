@@ -13,12 +13,12 @@
           placeholder="Type Your City..."
         />
       </div>
-      <div class="weatherwrap" v-if="typeof weather.main != 'undefined'">
+      <div class="weatherwrap animated bounceInLeft" v-if="typeof weather.main != 'undefined'">
         <div class="locationbox">
           <div class="location">{{ weather.name }}, {{ weather.sys.country }}</div>
           <div class="date">{{ dateBuilder() }}</div>
         </div>
-        <div class="weatherbox">
+        <div class="weatherbox animated bounceInLeft">
           <div class="temp">
             <p>Temperature</p>
             <img src="./assets/weather.svg" alt="Weather logo" width="90px" height="90px" />
@@ -26,7 +26,7 @@
             <div class="weather">{{ weather.weather[0].main }}</div>
           </div>
           <br />
-          <div class="wind">
+          <div class="wind animated bounceInLeft">
             <p>Wind Speed</p>
             <img src="./assets/wind.svg" alt="Weather logo" width="90px" height="90px" />
             {{ weather.wind.speed }} m/s
